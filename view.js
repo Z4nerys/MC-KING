@@ -202,6 +202,11 @@ const PRODUCTS = [
 //este productos no deberia estar aca pero la importacion me tira errores
 //quise hacer un archivo .json y tmb tiraba errores xDD 
 
+PRODUCTS.map((producto, i) =>{
+    producto.id = i+1;
+})
+console.log(PRODUCTS)
+
 const items = document.getElementById('items');
 const templateCard = document.getElementById('template-card').content;
 const fragment = document.createDocumentFragment();
@@ -212,6 +217,8 @@ const pintarCards = data => {
         templateCard.querySelector('h5').textContent = producto.nombre
         //templateCard.querySelector('img').setAttribute("src", producto.img)
         templateCard.querySelector('p').textContent = producto.precio
+        templateCard.querySelector('.btn-dark').dataset.id = producto.id
+        templateCard.querySelector('.btn-dark').href = `file:///C:/Users/gaston.fleitas/Desktop/MC-KING/McDonald's/verproducto.html?id=${producto.id}`
         const clone = templateCard.cloneNode(true)
         fragment.appendChild(clone)
     })
