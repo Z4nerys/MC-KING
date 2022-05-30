@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { Link, Redirect } from "react-router-dom"
 import swAlert from '@sweetalert/with-react'
 import { products } from '../assets/data'
-
+import frape from '../assets/img/frappe.png'
 
 export const Listado = ({ addRemoveFavs }) => {
     const tokenExist = sessionStorage.getItem('token')
@@ -31,8 +31,9 @@ export const Listado = ({ addRemoveFavs }) => {
 
             <h1>Hamburguesas</h1>
             <h2>{products[0].nombre}</h2>
-            <img src='../assets/img/frappe.png' alt="queso" className=""/>
+            <img src={frape} alt="queso" className=""/>
             <h2>No carga la imagen xD</h2>
+            <img src={products[0].img} alt="queso" className=""/>
 
             <hr/>
 
