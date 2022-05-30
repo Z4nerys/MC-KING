@@ -2,6 +2,8 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, Redirect } from "react-router-dom"
 import swAlert from '@sweetalert/with-react'
+import { products } from '../assets/data'
+
 
 export const Listado = ({ addRemoveFavs }) => {
     const tokenExist = sessionStorage.getItem('token')
@@ -10,6 +12,7 @@ export const Listado = ({ addRemoveFavs }) => {
     const imageUrl = 'https://image.tmdb.org/t/p/w500/';
 
     const [moviesList, setMoviesList] = useState([])
+    console.log(products)
 
     useEffect(() => {
         axios.get(url)
@@ -25,6 +28,13 @@ export const Listado = ({ addRemoveFavs }) => {
     return (
         <>
             {!tokenExist && <Redirect to='/' />}
+
+            <h1>Hamburguesas</h1>
+            <h2>{products[0].nombre}</h2>
+            <img src='../assets/img/frappe.png' alt="queso" className=""/>
+            <h2>No carga la imagen xD</h2>
+
+            <hr/>
 
             <div className="row mt-3 ">
                 {moviesList.map((movie, idx) => {
