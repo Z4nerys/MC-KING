@@ -6,7 +6,7 @@ export const products = [
         "descripción" : "Quizás sean las dos hamburguesas de carne 100% vacuna con esa salsa especial y queso derretido, el toque de cebolla y la frescura de la lechuga o el crocante del pepino, lo que la hace la hamburguesa más famosa del mundo. Un sabor único.",
         "calorias" : "505 kcal",
         "precio" : "$ 590",
-        "img" : "./img/Big-Mac.png"
+        "img" : "Big-Mac.png"
         
     },
     {
@@ -16,7 +16,7 @@ export const products = [
         "descripción" : "El helado para los que lo quieren todo. Para los que no se conforman con un sabor. Un helado que combina dulce de leche, vainilla y un delicioso cucurucho.",
         "calorias" : "184 kcal",
         "precio" : "$ 100",
-        "img" : "./img/Cono-Combinado.png"
+        "img" : "Cono-Combinado.png"
         
     },
     {
@@ -26,7 +26,7 @@ export const products = [
         "descripción" : "Si amás el dulce de leche, si amás el helado, si amás el cucurucho, si amás un postre que te refresque; este es tu postre.",
         "calorias" : "193 kcal",
         "precio" : "$ 100",
-        "img" : "./img/cono-de-dulce-de-leche.png"
+        "img" : "cono-de-dulce-de-leche.png"
         
     },
     {
@@ -36,7 +36,7 @@ export const products = [
         "descripción" : "Un clásico cono que nunca pasa de moda. La opción que todos aman por su sabor, su dulce cucurucho y su estilo tan cool.",
         "calorias" : "175 kcal",
         "precio" : "$ 100",
-        "img" : "./img/Cono-de-Vainilla.png"
+        "img" : "Cono-de-Vainilla.png"
         
     },
     {
@@ -46,7 +46,7 @@ export const products = [
         "descripción" : "Cremoso helado de vainilla, en un delicioso cucurucho, acompañado de la crujiente oblea de chocolate, la favorita de todos: Kit Kat. ¡Imposible resistirse!",
         "calorias" : "190 Kcal",
         "precio" : "$ 140",
-        "img" : "./img/cono-kitkat.png"
+        "img" : "cono-kitkat.png"
         
     },
     {
@@ -56,7 +56,7 @@ export const products = [
         "descripción" : "Helado de vainilla, dulce de leche o combinado, servido en cono de masa crocante y con relleno de chocolate, frutilla o dulce de leche. ¿Cuál elegis?",
         "calorias" : "225 Kcal",
         "precio" : "$ 130",
-        "img" : "./img/cono-relleno.png"
+        "img" : "cono-relleno.png"
         
     },
     {
@@ -66,7 +66,7 @@ export const products = [
         "descripción" : "La belleza radica en la simpleza de las cosas. Una hamburguesa que no se anda con vueltas. La perfecta combinación entre la mejor carne 100% vacuna y dos quesos que lo rodean, junto con el toque del kétchup, mostaza y la cebolla fresca.",
         "calorias" : "520 kcal",
         "precio" : "$ 590",
-        "img" : "./img/Cuarto-de-Libra-con-Queso.png"
+        "img" : "Cuarto-de-Libra-con-Queso.png"
         
     },
     {
@@ -76,7 +76,7 @@ export const products = [
         "descripción" : "Imaginá la sensación del clásico Cuarto de Libra. Imaginalo con un medallón de deliciosa carne 100% vacuna, queso cheddar, cebolla, kétchup y mostaza ¿Listo? Ahora duplicá esa sensación. Ya tenés el Doble Cuarto en la cabeza.",
         "calorias" : "771 kcal",
         "precio" : "$ 680",
-        "img" : "./img/Doble-Cuarto-de-Libra-con-Queso.png"
+        "img" : "Doble-Cuarto-de-Libra-con-Queso.png"
         
     },
     {
@@ -86,7 +86,7 @@ export const products = [
         "descripción" : "¡Los productos más frescos para nuestra ensalada más fresca! De lo mejor de nuestra huerta sale nuestra mejor ensalada, una base de ensalada acompañada con tomates cherry. Un complemento ideal para acompañar tu McMenú®. Nuestras ensaladas se elaboran diariamente con productos frescos de Florette®.",
         "calorias" : "31 Kcal",
         "precio" : "$ 360",
-        "img" : "./img/ensalada-huerta.png"
+        "img" : "ensalada-huerta.png"
         
     },
     {
@@ -96,7 +96,7 @@ export const products = [
         "descripción" : "¡Saborea nuestra nueva ensalada de queso de cabra con mix de ensalada, cherritos y croutons! Nuestras ensaladas se elaboran diariamente con productos frescos de Florette®",
         "calorias" : "68 Kcal",
         "precio" : "$ 480",
-        "img" : "./img/ensalada-queso-cabra.png"
+        "img" : "ensalada-queso-cabra.png"
         
     },
     {
@@ -106,7 +106,7 @@ export const products = [
         "descripción" : "La mejor selección de finos granos de café arábicos en todo su esplendor, para que disfrutes sorbo a sorbo.",
         "calorias" : "25 Kcal",
         "precio" : "$ 150",
-        "img" : "./img/expresso.png"
+        "img" : "expresso.png"
         
     },
     {
@@ -116,7 +116,7 @@ export const products = [
         "descripción" : "La mejor selección de finos granos de café arábicos en todo su esplendor, para que disfrutes sorbo a sorbo.",
         "calorias" : "25 Kcal",
         "precio" : "$ 150",
-        "img" : "./img/frape-de-frutilla-banana.png"
+        "img" : "frape-de-frutilla-banana.png"
         
     },
     {
@@ -126,7 +126,7 @@ export const products = [
         "descripción" : "Probá tus frutas favoritas dentro de un mismo batido fresco. Acá está la bebida ideal que buscabas para ganarle al calor.",
         "calorias" : "387.78 Kcal",
         "precio" : "$ 350",
-        "img" : "./img/frappe.png"
+        "img" : "frappe.png"
         
     },
     {
@@ -136,7 +136,7 @@ export const products = [
         "descripción" : "El mismo café que te ayuda a levantarte todos los días, ahora con una sensación refrescante, acompañado de crema e hilos de chocolate.",
         "calorias" : "146 Kcal",
         "precio" : "$ 310",
-        "img" : "./img/Grand-Doble-McBacon.png"
+        "img" : "Grand-Doble-McBacon.png"
         
     },
     {
@@ -146,7 +146,7 @@ export const products = [
         "descripción" : "¡NUEVO PAN! Dos carnes, inigualable queso cheddar, cebolla, kétchup y mostaza, y el increíble ingrediente que lo hace único: bacon premium.",
         "calorias" : "942 Kcal",
         "precio" : "$ 680",
-        "img" : "./img/GRAND-TASTY-DOBLE.png"
+        "img" : "GRAND-TASTY-DOBLE.png"
         
     },
     {
@@ -156,7 +156,7 @@ export const products = [
         "descripción" : "Inigualable pan con semillas de sésamo, tres medallones de carne 100% vacuna, cuatro fetas de nuestro exclusivo Queso Cheddar, cebolla, lechuga y tomate frescos. Sumado a estos ingredientes la única e inigualable Salsa Tasty, un exclusivo sabor McDonald’s",
         "calorias" : "1153 Kcal",
         "precio" : "$ 840",
-        "img" : "./img/GRAND-TASTY-TRIPLE.png"
+        "img" : "GRAND-TASTY-TRIPLE.png"
         
     },
     {
@@ -166,7 +166,7 @@ export const products = [
         "descripción" : "¡NUEVO PAN! Triple carne, inigualable queso cheddar, cebolla, kétchup y mostaza, y el increíble ingrediente que lo hace único: bacon premium",
         "calorias" : "1233 Kcal",
         "precio" : "$ 840",
-        "img" : "./img/Grand-Triple-McBacon.png"
+        "img" : "Grand-Triple-McBacon.png"
         
     },
     {
@@ -176,7 +176,7 @@ export const products = [
         "descripción" : "Carne 100% vacuna, queso derretido y mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar. Un clásico que nunca pasa de moda.",
         "calorias" : "289 kcal",
         "precio" : "$ 400",
-        "img" : "./img/Hamburguesa-con-Queso.png"
+        "img" : "Hamburguesa-con-Queso.png"
         
     },
     {
@@ -186,7 +186,7 @@ export const products = [
         "descripción" : "El sabor de la carne 100% vacuna más deliciosa, acompañado del pan más esponjoso, kétchup, mostaza y cebolla triturada.",
         "calorias" : "243 kcal",
         "precio" : "$ 350",
-        "img" : "./img/Hamburguesa.png"
+        "img" : "Hamburguesa.png"
         
     },
     {
@@ -196,7 +196,7 @@ export const products = [
         "descripción" : "El sabor de la carne 100% vacuna más deliciosa, acompañado con las clásicas papas fritas crocantes realizadas en el momento, bebida fresca y un juguete ¡Elegí entre Libro o Juguete!",
         "calorias" : "228.8 Kcal",
         "precio" : "$ 750",
-        "img" : "./img/Hamburguesa(Cajita Feliz).png"
+        "img" : "Hamburguesa(Cajita Feliz).png"
         
     },
     {
@@ -206,7 +206,7 @@ export const products = [
         "descripción" : "Delicioso espresso con vainilla, leche con espuma y por si fuera poco, acompañado de un increíble crocante de caramelo.",
         "calorias" : "40 Kcal",
         "precio" : "$ 180",
-        "img" : "./img/latte.png"
+        "img" : "latte.png"
         
     },
     {
@@ -216,7 +216,7 @@ export const products = [
         "descripción" : "Una hamburguesa exquisita compuesta de dos carnes 100% vacuna, acompañadas del clásico pan, mostaza, kétchup, queso derretido, y un toque de cebolla que la hace única.",
         "calorias" : "389 Kcal",
         "precio" : "$650",
-        "img" : "./img/McDuo.png"
+        "img" : "McDuo.png"
         
     },
     {
@@ -226,7 +226,7 @@ export const products = [
         "descripción" : "Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga y tomate",
         "calorias" : "229 Kcal",
         "precio" : "$470 ",
-        "img" : "./img/McFiesta-Jr -cajita-feliz.png"
+        "img" : "McFiesta-Jr -cajita-feliz.png"
         
     },
     {
@@ -236,7 +236,7 @@ export const products = [
         "descripción" : "Hamburguesa elaborada con carne 100% de carne vacuna, mayonesa, lechuga y tomate",
         "calorias" : "421 Kcal",
         "precio" : "$620 ",
-        "img" : "./img/McFiesta.png"
+        "img" : "McFiesta.png"
         
     },
     {
@@ -246,7 +246,7 @@ export const products = [
         "descripción" : "Un helado de vainilla que se banca compartir el protagonismo con trocitos de deliciosas galletitas Oreo y la salsa que elijas. Amalo hasta el final.",
         "calorias" : "424 Kcal",
         "precio" : "$450 ",
-        "img" : "./img/mcflurry-oreo.png"
+        "img" : "mcflurry-oreo.png"
         
     },
     {
@@ -256,7 +256,7 @@ export const products = [
         "descripción" : "Helado de vainilla con trocitos de deliciosas galletitas Óreo, salsa de Chocoavellanas que al contacto con tu postre se transforma en un placer crocante",
         "calorias" : "610 Kcal",
         "precio" : "$450 ",
-        "img" : "./img/mcflury-crocantella.png"
+        "img" : "mcflury-crocantella.png"
         
     },
     {
@@ -266,7 +266,7 @@ export const products = [
         "descripción" : "La crocante oblea de chocolate que todo el mundo conoce y ama, pero acompañada de un cremoso helado de vainilla y una deliciosa salsa tibia de chocolate. ¿Hace falta que te diga más? El break helado que esperabas.",
         "calorias" : "455 Kcal",
         "precio" : "$450 ",
-        "img" : "./img/mcflury-kitkat.png"
+        "img" : "mcflury-kitkat.png"
         
     },
     {
@@ -276,7 +276,7 @@ export const products = [
         "descripción" : "En un mundo donde todos buscan lo nuevo todo el tiempo, la McNífica viene a rectificar lo bueno de ser clásico. Carne, queso cheddar, tomate, lechuga y cebolla, acompañados de kétchup, mostaza y mayonesa.",
         "calorias" : "513 Kcal",
         "precio" : "$650 ",
-        "img" : "./img/McNifica.png"
+        "img" : "McNifica.png"
         
     },
     {
@@ -286,7 +286,7 @@ export const products = [
         "descripción" : "Ligero sabor a empanado de harina de maíz y trigo frito con notas caramelizadas. Suave sabor a pollo que es ligeramente salado con un toque de pimienta negra y apio en el empanado",
         "calorias" : "117.12kcal",
         "precio" : "$250 ",
-        "img" : "./img/McNuggets-4unidades.png"
+        "img" : "McNuggets-4unidades.png"
         
     },
     {
@@ -296,7 +296,7 @@ export const products = [
         "descripción" : "Bebida frozen a base de leche y chocolate amargo con copos de maíz y pasta de avellanas, recubierta por finos hilos de chocolate Croccantella",
         "calorias" : "388kcal",
         "precio" : "$300 ",
-        "img" : "./img/milshake-croccantella.png"
+        "img" : "milshake-croccantella.png"
         
     },
     {
@@ -306,7 +306,7 @@ export const products = [
         "descripción" : "La mejor elección para disfrutar del sabor intenso del café.",
         "calorias" : "2kcal",
         "precio" : "$100 ",
-        "img" : "./img/ristretto.png"
+        "img" : "ristretto.png"
         
     },
     {
@@ -316,7 +316,7 @@ export const products = [
         "descripción" : "La medida justa entre salsa de chocolate y helado de vainilla que pueden hacerte vivir una experiencia explosiva.",
         "calorias" : "264kcal",
         "precio" : "$ 220",
-        "img" : "./img/sundae-chocolate.png"
+        "img" : "sundae-chocolate.png"
         
     },
     {
@@ -326,7 +326,7 @@ export const products = [
         "descripción" : "Helado de vainilla, salsa caliente y recubierto con salsa de Chocoavellanas que al contacto con tu postre se transforma en un placer crocante",
         "calorias" : "399kcal",
         "precio" : "$250 ",
-        "img" : "./img/sundae-croncantella.png"
+        "img" : "sundae-croncantella.png"
         
     },
     {
@@ -336,7 +336,7 @@ export const products = [
         "descripción" : "El exquisito helado de vainilla que ya conoces y te encanta, pero bañado de una salsa de dulce de leche que te encantará aún más.",
         "calorias" : "257kcal",
         "precio" : "$220 ",
-        "img" : "./img/sundae-dulce-de-leche.png"
+        "img" : "sundae-dulce-de-leche.png"
     },
     {
         "id" : 35,
@@ -345,7 +345,7 @@ export const products = [
         "descripción" : "El exquisito helado de vainilla que ya conoces y te encanta, pero bañado de una salsa de dulce de leche que te encantará aún más.",
         "calorias" : "257 kcal",
         "precio" : "$220 ",
-        "img" : "./img/sundae-frutilla.png"
+        "img" : "sundae-frutilla.png"
         
     },
     {
@@ -355,7 +355,7 @@ export const products = [
         "descripción" : "Como el tradicional, pero con mas helado! Deliciosa mezcla de helado McDonald's en sabor dulce de leche, vainilla o combinado, dentro del exquisito cono de siempre.",
         "calorias" : "385 kcal",
         "precio" : "$ 200",
-        "img" : "./img/super-cono.png"
+        "img" : "super-cono.png"
         
     },
     {
@@ -365,7 +365,7 @@ export const products = [
         "descripción" : "Un clásico para tomar en cualquier momento del día. Una infusión de aromas únicos, con exquisito sabor que seguro te alegrará el día.",
         "calorias" : "0 kcal",
         "precio" : "$ 160 ",
-        "img" : "./img/te.png"
+        "img" : "te.png"
         
     },
     {
@@ -375,7 +375,7 @@ export const products = [
         "descripción" : "Tres medallones de carne 100% vacuna, queso derretido, mostaza, kétchup y cebolla triturada, es algo que nunca puede fallar.",
         "calorias" : "605 Kcal",
         "precio" : "$ 530 ",
-        "img" : "./img/Triple-Hamburguesa-con-Queso.png"
+        "img" : "Triple-Hamburguesa-con-Queso.png"
         
     },
     {
@@ -385,7 +385,7 @@ export const products = [
         "descripción" : "Una hamburguesa que no es para cualquiera. Sólo los más extremos están dispuestos a saborear tres carnes 100% vacuna acompañadas del clásico pan McDonald’s, su característica salsa especial, queso derretido, lechuga fresca, pepino crocante y el toque de cebolla que la hace única.",
         "calorias" : "541 kcal",
         "precio" : "$ 600 ",
-        "img" : "./img/Triple-Mac.png"
+        "img" : "Triple-Mac.png"
         
     },
     {
@@ -395,7 +395,7 @@ export const products = [
         "descripción" : "Yogur endulzado parcialmente descremado sabor a vainilla natural",
         "calorias" : "36 kcal",
         "precio" : "$ 150",
-        "img" : "./img/yogurkid.png"
+        "img" : "yogurkid.png"
     },
     {      
         "id" : 41,
@@ -404,7 +404,7 @@ export const products = [
         "descripción" : "Disfruta de esta deliciosa ensalada, creada con nuestra base más fresca! Base de ensalada acompañada de pollo crispy, queso en láminas y croutons.",
         "calorias" : "351 kcal",
         "precio" : "$ 300",
-        "img" : "./img/ensalada-cesar-con-pollo-crujiente.png"
+        "img" : "ensalada-cesar-con-pollo-crujiente.png"
         
     }
 ]

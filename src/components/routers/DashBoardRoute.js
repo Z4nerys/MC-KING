@@ -5,7 +5,6 @@ import {
 } from 'react-router-dom'
 import { Header } from '../Header'
 import { Listado } from '../Listado'
-import { Footer } from '../Footer'
 import { Detalle } from '../Detalle'
 import { Resultados } from '../Resultados'
 
@@ -55,7 +54,6 @@ export const DashBoardRoute = () => {
                     <Route path='/resultados' component={Resultados}/>
                 </Switch>
             </div>
-            <Footer />
         </div>
     )
 }
