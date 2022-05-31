@@ -3,7 +3,7 @@ import {
     Route,
     Switch
 } from 'react-router-dom'
-import { Header } from '../Header'
+import { Header } from '../Header/Header'
 import { Listado } from '../Listado'
 import { Detalle } from '../Detalle'
 import { Resultados } from '../Resultados'
