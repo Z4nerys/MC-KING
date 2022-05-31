@@ -1,8 +1,6 @@
 import { Link, Redirect } from "react-router-dom"
 import { products } from '../data/data'
 
-//const imagesMc = require.context('../../assets/img')
-
 export const Listado = () => {
     const tokenExist = sessionStorage.getItem('token')
     

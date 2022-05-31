@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Redirect } from 'react-router-dom';
 import axios from 'axios';
-import swAlert from '@sweetalert/with-react'
 
 export const Detalle = () => {
     const tokenExist = sessionStorage.getItem('token')
@@ -25,7 +24,7 @@ export const Detalle = () => {
                 setMovie(data.data)
             }).catch(error => {
                 console.log(error)
-                swAlert(<h2>Tuvimos problemas, intente en unos momentos!</h2>)
+                alert('Tuvimos problemas, intente en unos momentos!')
             })
 
     }, [url]);

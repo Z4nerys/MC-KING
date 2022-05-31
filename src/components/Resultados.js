@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import swAlert from '@sweetalert/with-react'
 
 export const Resultados = () => {
     const query = new URLSearchParams(window.location.search)
@@ -18,7 +17,7 @@ export const Resultados = () => {
         axios.get(url)
             .then(data => {
                 if(data.data.results.length === 0){
-                    swAlert("No se encontraron resultados")
+                    alert("No se encontraron resultados")
 
                 }
                 setMoviesResult(data.data.results)

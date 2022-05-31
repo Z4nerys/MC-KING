@@ -1,5 +1,4 @@
 import React from 'react'
-import swAlert from '@sweetalert/with-react'
 import { useHistory } from 'react-router-dom'
 
 export const Buscador = () => {
@@ -10,7 +9,7 @@ export const Buscador = () => {
         //accedo al elemento a traves de su name
         const keyword = e.target.keyword.value.trim();
         if (keyword.length < 4 ) {
-            swAlert(<h5>Tiene que tener mas de 3 caracteres</h5>)
+            alert('Tiene que tener mas de 3 caracteres')
             return;
         }
         e.target.keyword.value = '';
