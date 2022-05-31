@@ -17,13 +17,14 @@ header{
     align-items: center;
     
 }
-.logo div{
+.logo .log{
     height: 100%;
     font-size: 2.7rem;
     margin-left: 17.5%;
     padding: 0 10%;
     font-weight: 300;
     color: rgb(255, 81, 0);
+    text-decoration: none;
 }
 
 ul{

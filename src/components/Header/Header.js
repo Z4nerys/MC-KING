@@ -15,12 +15,12 @@ export const Header = () => {
     return (
         <header>
             <div className="logo">
-                <div>MC</div>
+                <Link className="log" to='/'>MC</Link>
             </div>
             <nav className="">
                 <ul className="">
                     <li >
-                        <Link className="link" to='/'> Productos</Link>
+                        <Link className="link" to='/listado'> Productos</Link>
                     </li>
                     <li>
                         <Link className="link" to='/listado'> Locales</Link>
