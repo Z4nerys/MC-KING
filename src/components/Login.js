@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { Redirect } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
 
@@ -6,10 +5,6 @@ export const Login = () => {
     const history = useHistory()
 
     const tokenExist = sessionStorage.getItem('token')
-    
-    const boton = () =>{
-        console.log('boton')
-    }
 
     const submitHandler = async e => {
         e.preventDefault()
@@ -30,7 +25,7 @@ export const Login = () => {
             return;
         }
 
-        if (email !== 'challenge@alkemy.org' || password !== 'react') {
+        if (email !== 'day@unla.com' || password !== 'unla') {
             alert('Credenciales invalidas')
             return;
         }
@@ -39,17 +34,11 @@ export const Login = () => {
 
         //se envia la url y como segundo parametro un objeto con los datos
         //obtengo el token
-        try {
-            const token = await (await axios.post('http://challenge-react.alkemy.org/', { email, password })).data.token
-            await alert('Formulario enviado con exito!')
-            //luego guardo el token en el localStorage
-            sessionStorage.setItem('token', token);
-            history.push('/listado');
+        await alert('Formulario enviado con exito!')
+        //luego guardo el token en el localStorage
+        sessionStorage.setItem('token', email);
+        history.push('/listado');
 
-        } catch (error) {
-            alert('Error! no se pudo enviar formulario!')
-            console.log(error)
-        }
     }
 
     return (
@@ -87,7 +76,6 @@ export const Login = () => {
                         Ingresar
                     </button>
                 </form>
-                <button onClick={boton}>presioname</button>
             </div>
         </div>
     )
