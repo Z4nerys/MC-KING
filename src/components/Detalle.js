@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 export const Detalle = () => {
-    const tokenExist = sessionStorage.getItem('token')
 
     //obtener el queryparams que se envia por la url. con javascript. tmb se puede hacer con hooks
     //aca le mando la url como parametro
@@ -31,8 +29,6 @@ export const Detalle = () => {
 
     return (
         <>
-            {!tokenExist && <Redirect to='/' />}
-            {movie === '' && <p className='text-center'>Cargando...</p> }
             {
                 movie !== '' &&
                 <>

@@ -1,12 +1,11 @@
-import { Link, Redirect } from "react-router-dom"
+import { Link} from "react-router-dom"
 import { products } from '../data/data'
 
 export const Listado = () => {
-    const tokenExist = sessionStorage.getItem('token')
 
     return (
         <>
-            {!tokenExist && <Redirect to='/' />}
+            {/* {!tokenExist && <Redirect to='/' />} */}
 
             <h1>Productos</h1>
             <hr/>
