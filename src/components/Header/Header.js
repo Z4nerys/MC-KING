@@ -23,7 +23,7 @@ export const Header = () => {
                         <Link className="link" to='/listado'> Productos</Link>
                     </li>
                     <li>
-                        <Link className="link" to='/listado'> Locales</Link>
+                        <Link className="link" to='/locales'> Locales</Link>
                     </li>
                     <li>
                         <Link className="link" to='/listado'> Promociones</Link>

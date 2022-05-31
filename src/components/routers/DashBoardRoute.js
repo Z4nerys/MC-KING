@@ -7,6 +7,8 @@ import { Header } from '../Header/Header'
 import { Listado } from '../Listado'
 import { Detalle } from '../Detalle'
 import { Resultados } from '../Resultados'
+import { Home } from '../Home'
+import { Locales } from '../Locales'
 
 export const DashBoardRoute = () => {
 
@@ -49,8 +51,10 @@ export const DashBoardRoute = () => {
             <Header />
             <div className='container' >
                 <Switch>
+                    <Route exact path='/' component={Home} />
                     <Route path='/listado' render={(props) => <Listado addRemoveFavs={addRemoveFavs} {...props}/>}/>
                     <Route path='/detalle' component={Detalle}/>
+                    <Route path='/locales' component={Locales}/>
                     <Route path='/resultados' component={Resultados}/>
                 </Switch>
             </div>

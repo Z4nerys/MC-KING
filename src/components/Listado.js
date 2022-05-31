@@ -7,8 +7,10 @@ export const Listado = () => {
         <>
             {/* {!tokenExist && <Redirect to='/' />} */}
 
-            <h1>Productos</h1>
+            <h1 >Productos</h1>
             <hr/>
+            {/*modificar el estilo. el header tapa el titulo */}
+            <h1 >Productos</h1>
             <div className="row mt-3 ">
                 {products.map((product, idx) => {
                     return (
