@@ -3,8 +3,6 @@ import { products } from '../data/data'
 
 export const Listado = () => {
     const tokenExist = sessionStorage.getItem('token')
-    
-    console.log(products)
 
     return (
         <>
