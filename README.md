@@ -1,5 +1,5 @@
 # instalar
-npm install --force
+npm install
 
 # run
 npm start

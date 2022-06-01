@@ -16,12 +16,12 @@ export const Listado = () => {
                     return (
                         <div className="col-3 mb-5" key={idx}>
                             <div className="card">
-                                <img src={`/assets/img/${product.img}`} alt="product" className="card-img-top" />
+                                <img src={`/assets/img/${product.img}`} alt={product.nombre} className="card-img-top" />
 
                                 <div className="card-body">
                                     <h5 className="card-title">{product.nombre}</h5>
                                     <p className="card-text">{product.precio}</p>
-                                    <Link to={`/detalle?movieID=${product.id}`} className="btn btn-dark mx-2">Comprar</Link>
+                                    <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-2">Comprar</Link>
                                 </div>
                             </div>
                         </div>
