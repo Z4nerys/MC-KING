@@ -3,7 +3,6 @@ import React from 'react'
 import { products } from '../data/data';
 
 export const Detalle = () => {
-
     //obtener el queryparams que se envia por la url. con javascript. tmb se puede hacer con hooks
     //aca le mando la url como parametro
     const query = new URLSearchParams(window.location.search);
@@ -29,8 +28,10 @@ export const Detalle = () => {
                     <p> {product.descripción}</p>
                     <h5>Ingredientes: </h5>
                     <p>{product.ingredientes}</p>
-                    <h5>Calorias:</h5><p>{product.calorias}</p>
-                    <h5>Precio:</h5><p>$ {product.precio}</p>
+                    <h5>Calorias:</h5>
+                    <p>{product.calorias}</p>
+                    <h5>Precio:</h5>
+                    <p>$ {product.precio}</p>
                     <button className='btn btn-warning'>Comprar</button>
                 </div>
             </div>
