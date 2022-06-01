@@ -436,5 +436,102 @@ export const products = [
         "tipo": "ensalada"
         
     }
+]
 
+export const localidades = [
+    {
+        "id": "1",
+        "direccion" : "Av. Hipólito Yrigoyen 8230, B1832",
+        "localidad" : "Lomas de zamora"
+    },
+    {
+        "id": "2",
+        "direccion" : "Av. Laprida 177 B1832HOC, B1832HOC",
+        "localidad" : "Lomas de zamora"
+    },
+    
+    {
+        "id": "3",
+        "direccion" : "Av. Antártida Arg. 703",
+        "localidad" : "Lomas de zamora"
+    },
+    {
+        "id": "4",
+        "direccion" : "Av. Antártida Arg. 703",
+        "localidad" : "Lomas de zamora"
+    },
+
+    {
+        "id": "5",
+        "direccion" : "Brandsen, Av. Bartolomé Mitre Esq",
+        "localidad" : "Quilmes"
+    },
+    {
+        "id": "6",
+        "direccion" : "Peatonal Rivadavia 124, B1878",
+        "localidad" : "Quilmes"
+    }
+    ,
+    {
+        "id": "7",
+        "direccion" : "Av. Calchaquí 3950",
+        "localidad" : "Quilmes"
+    }
+    ,
+    {
+        "id": "8",
+        "direccion" : "Av. Humberto 1º, Moreno Y",
+        "localidad" : "Quilmes"
+    }
+    ,
+    {
+        "id": "9",
+        "direccion" : "Raúl Scalabrini Ortiz 2034",
+        "localidad" : "CABA"
+    }
+    ,
+    {
+        "id": "10",
+        "direccion" : "Av. Federico Lacroze 3496, C1426 ",
+        "localidad" : "CABA"
+    }
+    ,
+    {
+        "id": "11",
+        "direccion" : "Av. Rivadavia 4515, C1424",
+        "localidad" : "CABA"
+    }
+    ,
+    {
+        "id": "12",
+        "direccion" : "Av. Cordoba 3821, C1188 AAR",
+        "localidad" : "CABA"
+    }
+    ,
+    {
+        "id": "13",
+        "direccion" : "Av. Corrientes 992, C1043 ",
+        "localidad" : "CABA"
+    },
+
+    {
+        "id": "14",
+        "direccion" : "Av. Bartolomé Mitre 639, B1870 ",
+        "localidad" : "Avelaneda"
+    },
+    {
+        "id": "15",
+        "direccion" : "B1873BOC, Gral. Güemes 897, B1873BOC ",
+        "localidad" : "Avellaneda"
+    },
+    {
+        "id": "16",
+        "direccion" : "Av. 9 de Julio 1196, B1820 ",
+        "localidad" : "Lanus"
+    },
+    {
+        "id": "17",
+        "direccion" : "ABA, Av. Hipólito Yrigoyen 4475 ",
+        "localidad" : "Lanus"
+    }
 ]
