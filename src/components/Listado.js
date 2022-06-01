@@ -20,7 +20,7 @@ export const Listado = () => {
 
                                 <div className="card-body">
                                     <h5 className="card-title">{product.nombre}</h5>
-                                    <p className="card-text">{product.precio}</p>
+                                    <p className="card-text">$ {product.precio}</p>
                                     <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-2">Comprar</Link>
                                 </div>
                             </div>
