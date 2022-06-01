@@ -9,6 +9,7 @@ import { Detalle } from '../Detalle'
 import { Resultados } from '../Resultados'
 import { Home } from '../Home'
 import { Locales } from '../Locales'
+import { Contactenos } from '../Contactenos'
 
 export const DashBoardRoute = () => {
 
@@ -55,6 +56,7 @@ export const DashBoardRoute = () => {
                     <Route path='/listado' render={(props) => <Listado addRemoveFavs={addRemoveFavs} {...props}/>}/>
                     <Route path='/detalle' component={Detalle}/>
                     <Route path='/locales' component={Locales}/>
+                    <Route path='/contacto' component={Contactenos}/>
                     <Route path='/resultados' component={Resultados}/>
                 </Switch>
             </div>

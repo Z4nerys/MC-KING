@@ -14,7 +14,6 @@ export const Buscador = () => {
         }
         e.target.keyword.value = '';
         history.push(`/resultados?keyword=${keyword}`)
-
     }
     return (
         <>

@@ -56,3 +56,6 @@ button:hover{
     background:rgb(255, 81, 0);
     color:white;
 }
+textarea{
+    resize: none;
+}
