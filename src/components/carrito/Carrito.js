@@ -10,11 +10,7 @@ export const Carrito = ({ itemsCart }) => {
             <table className="table">
                 <thead>
                     <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Img</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Minutes</th>
-                        <th scope="col">Remove</th>
+                        <br/>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,17 +26,9 @@ export const Carrito = ({ itemsCart }) => {
             </table>
             <table className='table'>
                 <thead>
-                    <tr>
-                        <th scope="col">Final Price</th>
-                        <th scope="col">Ready in total</th>
-                        <th scope="col">Health Score</th>
-                    </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>$ price</td>
-                        
-                    </tr>
+                    <h5>final price: $50</h5>
                 </tbody>
             </table>
         </div>

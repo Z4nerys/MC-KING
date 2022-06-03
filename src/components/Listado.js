@@ -44,7 +44,6 @@ export const Listado = () => {
                 })
                 }
             </div>
-            <h1>Carrito</h1>
             <Carrito itemsCart={itemsCart}/> 
         </>
     )
