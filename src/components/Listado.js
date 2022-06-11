@@ -8,6 +8,21 @@ export const Listado = () => {
     const [itemsCart, setItemsCart] = useState([]);
     const [total, setTotal] = useState(0);
 
+    const query = new URLSearchParams(window.location.search);
+    //obtengo el dato que quiero de la url, mandandole el param que quiero obtener x parametro
+    const prod = query.get('prod')
+    let productos = []
+    if(prod){
+        productos = products.filter(product => product.tipo === prod)
+    }else{
+        productos = products
+    }
+
+    const reset = () =>{
+        setItemsCart([])
+        setTotal(0)
+    }
+
     const add = (id) => {
         const [newItem] = products.filter(product => product.id === id)
         const itemInCart = itemsCart.find(item => item.id === newItem.id)
@@ -32,13 +47,12 @@ export const Listado = () => {
 
     return (
         <>
-            {/* {!tokenExist && <Redirect to='/' />} */}
-
             <h1 >Productos</h1>
             <hr />
             <h1 >Productos</h1>
             <div className="row mt-3 ">
-                {products.map((product, idx) => {
+                {
+                productos.map((product, idx) => {
                     return (
                         <div className="col-4 mb-5" key={idx}>
                             <div className="card">
@@ -48,7 +62,7 @@ export const Listado = () => {
                                     <p className="card-text">$ {product.precio}</p>
                                     <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-5">Ver mas</Link>
                                     <button
-                                        className="btn btn-primary"
+                                        className="btn btn-success"
                                         onClick={() => add(product.id)}
                                     >
                                         Agregar
@@ -60,7 +74,13 @@ export const Listado = () => {
                 })
                 }
             </div>
-            <Carrito itemsCart={itemsCart} total={total} remove={remove} />
+            <Carrito 
+                itemsCart={itemsCart}
+                total={total}
+                remove={remove}
+                add={add} 
+                reset={reset}
+            />
         </>
     )
 }
