@@ -1,4 +1,5 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 
 import { products } from '../data/data';
 
@@ -11,6 +12,11 @@ export const Detalle = () => {
 
     //desestructuro el dato
     const [product] = products.filter(product => product.id === id);
+
+    const history = useHistory();
+    const volver = () =>{
+        history.push("/listado")
+    }
 
     return (
         <>
@@ -32,7 +38,7 @@ export const Detalle = () => {
                     <p>{product.calorias}</p>
                     <h5>Precio:</h5>
                     <p>$ {product.precio}</p>
-                    <button className='btn btn-warning'>Comprar</button>
+                    <button onClick={volver} className='btn btn-warning'>Volver</button>
                 </div>
             </div>
         </>

@@ -6,16 +6,28 @@ import { useState } from "react";
 export const Listado = () => {
 
     const [itemsCart, setItemsCart] = useState([]);
+    const [total, setTotal] = useState(0);
 
     const add = (id) => {
         const [newItem] = products.filter(product => product.id === id)
         const itemInCart = itemsCart.find(item => item.id === newItem.id)
         if (itemInCart) {
-            setItemsCart(itemsCart.map(item => item.id === itemInCart.id 
+            setItemsCart(itemsCart.map(item => item.id === itemInCart.id
                 ? { ...item, cantidad: item.cantidad + 1, precio: item.precio + newItem.precio } : item));
+            setTotal(total + newItem.precio)
         } else {
             setItemsCart([...itemsCart, newItem])
+            setTotal(total + newItem.precio)
         }
+    }
+    const remove = (id, precio, cantidad) => {
+        const [item] = itemsCart.filter(product => product.id === id)
+        if (item.cantidad === 1) {
+            setItemsCart(itemsCart.filter(item => item.id !== id))
+        }else{
+            setItemsCart(itemsCart.map(item => item.id === id ? {...item, cantidad: item.cantidad-1, precio: item.precio - precio/cantidad}: item))
+        }
+        setTotal(total - precio/cantidad)
     }
 
     return (
@@ -28,19 +40,18 @@ export const Listado = () => {
             <div className="row mt-3 ">
                 {products.map((product, idx) => {
                     return (
-                        <div className="col-3 mb-5" key={idx}>
+                        <div className="col-4 mb-5" key={idx}>
                             <div className="card">
-                                <img src={`/assets/img/${product.img}`} alt={product.nombre} className="card-img-top" />
-
+                                <img src={`/assets/img/${product.img}`} height={270} alt={product.nombre} className="card-img-top" />
                                 <div className="card-body">
                                     <h5 className="card-title">{product.nombre}</h5>
                                     <p className="card-text">$ {product.precio}</p>
-                                    <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-2">Ver mas</Link>
+                                    <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-5">Ver mas</Link>
                                     <button
                                         className="btn btn-primary"
                                         onClick={() => add(product.id)}
                                     >
-                                        Comprar
+                                        Agregar
                                     </button>
                                 </div>
                             </div>
@@ -49,7 +60,7 @@ export const Listado = () => {
                 })
                 }
             </div>
-            <Carrito itemsCart={itemsCart} />
+            <Carrito itemsCart={itemsCart} total={total} remove={remove} />
         </>
     )
 }
