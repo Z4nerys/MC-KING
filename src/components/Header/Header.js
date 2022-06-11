@@ -12,32 +12,39 @@ export const Header = () => {
     }
 
     return (
-        <header>
-            <div className="logo">
-                <Link className="log" to='/'>MC</Link>
+        <>
+            <div className="container-header">
+                <header className="container">
+                    <div className="logo">
+                        <Link className="link-img" to='/'>
+                            <img src="/assets/img/logo-bg-white.png" width="68px" height="68px"/>
+                        </Link>
+                    </div>
+                    <nav className="">
+                        <ul className="">
+                            <li >
+                                <Link className="link" to='/listado'> Productos</Link>
+                            </li>
+                            <li>
+                                <Link className="link" to='/locales'> Locales</Link>
+                            </li>
+                            <li>
+                                <Link className="link" to='/listado'> Promociones</Link>
+                            </li>
+                            <li>
+                                <Link className="link" to='/contacto'> Contactenos</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    {/* <Buscador/> */}
+                    <button
+                        onClick={handleLogout}
+                    >
+                        Logout
+                    </button>
+                </header>
             </div>
-            <nav className="">
-                <ul className="">
-                    <li >
-                        <Link className="link" to='/listado'> Productos</Link>
-                    </li>
-                    <li>
-                        <Link className="link" to='/locales'> Locales</Link>
-                    </li>
-                    <li>
-                        <Link className="link" to='/listado'> Promociones</Link>
-                    </li>
-                    <li>
-                        <Link className="link" to='/contacto'> Contactenos</Link>
-                    </li>
-                </ul>
-            </nav>
-            {/* <Buscador/> */}
-            <button
-                onClick={handleLogout}
-            >
-                Logout
-            </button>
-        </header>
+            <div className="header-space"></div>
+        </>
     )
 }   
