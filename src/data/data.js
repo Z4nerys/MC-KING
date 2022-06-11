@@ -576,3 +576,34 @@ export const localidades = [
         "localidad": "Lanus"
     }
 ]
+
+export const promociones = [
+    {
+        "id": "50",
+        "nombre": "2 McCombos Medianos Cuarto de Libra con Queso",
+        "Descripcion": "2 McCombos medianos Cuarto de Libra con Queso: carne 100% vacuna y dos quesos cheddar, ketchup, mostaza y cebolla fresca",
+        "img": "McCombosMedianosCuartodeLibra.png ",
+        "precio": 1670
+    },
+    {
+        "id": "51",
+        "nombre": "Dos Hamburguesas con Queso",
+        "Descripcion": "Dos Hamburguesas con Queso Cheddar cebolla, ketchup y mostaza",
+        "img": "HamburguesasconQueso.png",
+        "precio": 780
+    },
+    {
+        "id": "52",
+        "nombre": "2 McFlurry Oreo",
+        "Descripcion": "2 McFlurry Oreo, elegí tu helado y salsa",
+        "img": "McFlurryOreo.png",
+        "precio": 660
+    },
+    {
+        "id": "53",
+        "nombre": "McNuggets x 10",
+        "Descripcion": "10 McNuggets de pollo, acompañadas con salsa barbacóa",
+        "img": "McNuggets.png ",
+        "precio": 500
+    }
+]
