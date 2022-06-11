@@ -19,7 +19,7 @@ export const Carrito = ({ itemsCart }) => {
                     }
                 </tbody>
             </table>
-            <h5>Precio final: $505</h5>
+            <h5>Precio final: $10</h5>
         </div>
     )
 }
