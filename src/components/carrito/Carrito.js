@@ -1,7 +1,7 @@
 import React from 'react'
 import { Item } from './Item'
 
-export const Carrito = ({ itemsCart }) => {
+export const Carrito = ({ itemsCart, total, remove}) => {
 
     return (
         <div className='container'>
@@ -14,12 +14,13 @@ export const Carrito = ({ itemsCart }) => {
                             return <Item
                                 key={idx}
                                 {...item}
+                                remove={remove}
                             />
                         })
                     }
                 </tbody>
             </table>
-            <h5>Precio final: $505</h5>
+            <h5>Precio final: ${total}</h5>
         </div>
     )
 }
