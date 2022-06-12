@@ -1,10 +1,7 @@
-import { Redirect } from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
 
 export const Login = () => {
     const history = useHistory()
-
-    const tokenExist = sessionStorage.getItem('token')
 
     const submitHandler = async e => {
         e.preventDefault()
@@ -25,10 +22,10 @@ export const Login = () => {
             return;
         }
 
-        if (email !== 'day@unla.com' || password !== 'unla') {
+        /* if (email !== 'day@unla.com' || password !== 'unla') {
             alert('Credenciales invalidas')
             return;
-        }
+        } */
 
         //envio de formulario. POST con axios.
 
@@ -38,13 +35,10 @@ export const Login = () => {
         //luego guardo el token en el localStorage
         sessionStorage.setItem('token', email);
         history.push('/listado');
-
     }
 
     return (
         <div className='row'>
-            {tokenExist && <Redirect to='/listado' />}
-
             <div className='col-6 offset-3 mt-3'>
                 <h1>Formulario de login</h1>
                 <hr />

@@ -7,10 +7,6 @@ export const Contactenos = () => {
     }
     return (
         <>
-            <div>Contactenos</div>
-            <div>Contactenos</div>
-            <div>Contactenos</div>
-            <div>Contactenos</div>
             <h1>Formulario</h1>
             <form className="row" onSubmit={enviarDatos}>
                 <div className="col-md-3">

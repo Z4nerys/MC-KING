@@ -8,7 +8,7 @@ export const Header = () => {
     const history = useHistory()
     const handleLogout = () => {
         sessionStorage.removeItem('token')
-        history.push('/')
+        history.push('/login')
     }
 
     return (
@@ -29,9 +29,6 @@ export const Header = () => {
                                 <Link className="link" to='/locales'> Locales</Link>
                             </li>
                             <li>
-                                <Link className="link" to='/listado'> Promociones</Link>
-                            </li>
-                            <li>
                                 <Link className="link" to='/contacto'> Contactenos</Link>
                             </li>
                         </ul>
@@ -40,7 +37,7 @@ export const Header = () => {
                     <button
                         onClick={handleLogout}
                     >
-                        Logout
+                        Login
                     </button>
                 </header>
             </div>

@@ -55,7 +55,7 @@ export const Listado = () => {
                         <div className="col-3 mb-5" key={idx}>
                             <div className="card">
                                 <img src={`/assets/img/${product.img}`} height={270} alt={product.nombre} className="card-img-top" />
-                                <div className="card-body">
+                                <div className="card-body text-center">
                                     <h5 className="card-title">{product.nombre}</h5>
                                     <p className="card-text">$ {product.precio}</p>
                                     <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-5">Ver mas</Link>
