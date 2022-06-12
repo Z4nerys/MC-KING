@@ -23,8 +23,7 @@ export const Carrito = ({ itemsCart, total, remove, add, reset }) => {
         <div>
             <Button variant="success" onClick={handleShow} className="px-5 py-2">
                 <Cart aria-label="cart" className='back' />
-            </Button >
-
+            </Button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Tus productos</Modal.Title>
@@ -46,10 +45,7 @@ export const Carrito = ({ itemsCart, total, remove, add, reset }) => {
                     </table>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button className='btn btn-danger' onClick={reset}>Vaciar</Button>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Cerrar
-                    </Button>
+                    <Button className='btn mx-5 btn-danger' onClick={reset}>Vaciar</Button>
                     <h5>Precio final: ${total}</h5>
                     <Button variant="primary" onClick={Buy}>
                         Terminar Compra
