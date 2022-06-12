@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Carrito } from "./carrito/Carrito"
+import { Carrito }  from "./carrito/Carrito"
 import { products } from '../data/data'
 import { useState } from "react";
 
@@ -47,7 +47,18 @@ export const Listado = () => {
 
     return (
         <>
-            <h1 >Productos</h1>
+        <div className="d-flex justify-content-between">
+            <h1 className="" >Productos</h1>
+        <div className="d-flex align-items-center me-5">  
+            <Carrito 
+                itemsCart={itemsCart}
+                total={total}
+                remove={remove}
+                add={add} 
+                reset={reset}
+            />
+        </div>
+        </div>    
             <div className="row mt-3 ">
                 {
                 productos.map((product, idx) => {
@@ -56,11 +67,11 @@ export const Listado = () => {
                             <div className="card">
                                 <img src={`/assets/img/${product.img}`} height={270} alt={product.nombre} className="card-img-top" />
                                 <div className="card-body text-center">
-                                    <h5 className="card-title">{product.nombre}</h5>
-                                    <p className="card-text">$ {product.precio}</p>
-                                    <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-5">Ver mas</Link>
+                                         <h5 className="card-title ">{product.nombre}</h5>
+                                         <p className="card-text">$ {product.precio}</p>
+                                    <Link to={`/detalle?ID=${product.id}`} className="btn btn-dark mx-3 px-5">Ver mas</Link>
                                     <button
-                                        className="btn btn-success"
+                                        className="btn btn-success mx-3 px-5 mt-1"
                                         onClick={() => add(product.id)}
                                     >
                                         Agregar
@@ -71,14 +82,7 @@ export const Listado = () => {
                     )
                 })
                 }
-            </div>
-            <Carrito 
-                itemsCart={itemsCart}
-                total={total}
-                remove={remove}
-                add={add} 
-                reset={reset}
-            />
+            </div>            
         </>
     )
 }
