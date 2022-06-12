@@ -5,7 +5,7 @@ export const Carrito = ({ itemsCart, total, remove, add, reset}) => {
 
     return (
         <div className='container'>
-            <h4 className='text-center mt-2'>Cart</h4>
+            <h4 className='text-center mt-2'>Carrito</h4>
             <button className='btn btn-danger' onClick={reset}>clear cart</button>
             <table className="table mt-2">
                 <tbody>

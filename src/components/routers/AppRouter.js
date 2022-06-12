@@ -4,7 +4,7 @@ import {
     Switch,
 } from "react-router-dom";
 import { Login } from "../Login";
-import { DashBoardRoute } from "./DashBoardRoute";
+import { DashBoardRoute } from "./DashBoard/DashBoardRoute";
 //componentes
 
 export const AppRouter = () => {

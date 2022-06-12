@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 import {
     Route,
     Switch
-} from 'react-router-dom'
-import { Header } from '../Header/Header'
-import { Listado } from '../Listado'
-import { Detalle } from '../Detalle'
-import { Resultados } from '../Resultados'
-import { Home } from '../Home'
-import { Locales } from '../Locales'
-import { Contactenos } from '../Contactenos'
+} from 'react-router-dom';
+import { Header } from '../../Header/Header';
+import { Listado } from '../../Listado';
+import { Detalle } from '../../Detalle';
+import { Resultados } from '../../Resultados';
+import { Home } from '../../Home/Home';
+import { Locales } from '../../Locales';
+import { Contactenos } from '../../Contactenos';
+import './styles.css';
 
 export const DashBoardRoute = () => {
 
@@ -50,7 +51,7 @@ export const DashBoardRoute = () => {
     return (
         <div>
             <Header />
-            <div className='container' >
+            <div>
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route path='/listado' render={(props) => <Listado addRemoveFavs={addRemoveFavs} {...props}/>}/>

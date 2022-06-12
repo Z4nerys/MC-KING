@@ -474,8 +474,44 @@ export const products = [
         "precio": 300,
         "img": "ensalada-cesar-con-pollo-crujiente.png",
         "cantidad": 1,
-        "tipo": "ensalada"
+        "tipo": "ensalada",
 
+    },
+    {
+        "id": 42,
+        "nombre": "2 McCombos Medianos Cuarto de Libra con Queso",
+        "descripción": "2 McCombos medianos Cuarto de Libra con Queso: carne 100% vacuna y dos quesos cheddar, ketchup, mostaza y cebolla fresca",
+        "img": "McCombosMedianosCuartodeLibra.png ",
+        "precio": 1670,
+        "tipo": "promo",
+        "cantidad": 1,
+    },
+    {
+        "id": 43,
+        "nombre": "Dos Hamburguesas con Queso",
+        "descripción": "Dos Hamburguesas con Queso Cheddar cebolla, ketchup y mostaza",
+        "img": "HamburguesasconQueso.png",
+        "precio": 780,
+        "tipo": "promo",
+        "cantidad": 1,
+    },
+    {
+        "id": 44,
+        "nombre": "2 McFlurry Oreo",
+        "descripción": "2 McFlurry Oreo, elegí tu helado y salsa",
+        "img": "McFlurryOreo.png",
+        "precio": 660,
+        "tipo": "promo",
+        "cantidad": 1,
+    },
+    {
+        "id": 45,
+        "nombre": "McNuggets x 10",
+        "descripción": "10 McNuggets de pollo, acompañadas con salsa barbacóa",
+        "img": "McNuggets.png ",
+        "precio": 500,
+        "tipo": "promo",
+        "cantidad": 1,
     }
 ]
 
@@ -579,30 +615,30 @@ export const localidades = [
 
 export const promociones = [
     {
-        "id": "50",
+        "id": 42,
         "nombre": "2 McCombos Medianos Cuarto de Libra con Queso",
-        "Descripcion": "2 McCombos medianos Cuarto de Libra con Queso: carne 100% vacuna y dos quesos cheddar, ketchup, mostaza y cebolla fresca",
+        "descripción": "2 McCombos medianos Cuarto de Libra con Queso: carne 100% vacuna y dos quesos cheddar, ketchup, mostaza y cebolla fresca",
         "img": "McCombosMedianosCuartodeLibra.png ",
-        "precio": 1670
+        "precio": 1670,
     },
     {
-        "id": "51",
+        "id": 43,
         "nombre": "Dos Hamburguesas con Queso",
-        "Descripcion": "Dos Hamburguesas con Queso Cheddar cebolla, ketchup y mostaza",
+        "descripción": "Dos Hamburguesas con Queso Cheddar cebolla, ketchup y mostaza",
         "img": "HamburguesasconQueso.png",
         "precio": 780
     },
     {
-        "id": "52",
+        "id": 44,
         "nombre": "2 McFlurry Oreo",
-        "Descripcion": "2 McFlurry Oreo, elegí tu helado y salsa",
+        "descripción": "2 McFlurry Oreo, elegí tu helado y salsa",
         "img": "McFlurryOreo.png",
         "precio": 660
     },
     {
-        "id": "53",
+        "id": 45,
         "nombre": "McNuggets x 10",
-        "Descripcion": "10 McNuggets de pollo, acompañadas con salsa barbacóa",
+        "descripción": "10 McNuggets de pollo, acompañadas con salsa barbacóa",
         "img": "McNuggets.png ",
         "precio": 500
     }
