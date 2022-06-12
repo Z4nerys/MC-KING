@@ -20,10 +20,7 @@ export const Detalle = () => {
 
     return (
         <>
-            <div>Hola</div>
-            <div>Hola</div>
-            <div>Hola</div>
-            <h2 className='text-center mt-1'>{product.nombre}</h2>
+            <h2 className='text-center mt-5'>{product.nombre}</h2>
             <hr></hr>
             <div className='row mt-3'>
                 <div className='col-6'>
@@ -32,13 +29,13 @@ export const Detalle = () => {
                 <div className='col-6'>
                     <h5>Descripción:</h5>
                     <p> {product.descripción}</p>
-                    <h5>Ingredientes: </h5>
+                    <h5 className="mt-3">Ingredientes: </h5>
                     <p>{product.ingredientes}</p>
-                    <h5>Calorias:</h5>
+                    <h5 className="mt-3">Calorias:</h5>
                     <p>{product.calorias}</p>
-                    <h5>Precio:</h5>
+                    <h5 className="mt-3">Precio:</h5>
                     <p>$ {product.precio}</p>
-                    <button onClick={volver} className='btn btn-warning'>Volver</button>
+                    <button onClick={volver} className='btn btn-warning mt-4'>Volver</button>
                 </div>
             </div>
         </>

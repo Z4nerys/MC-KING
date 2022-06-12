@@ -48,13 +48,11 @@ export const Listado = () => {
     return (
         <>
             <h1 >Productos</h1>
-            <hr />
-            <h1 >Productos</h1>
             <div className="row mt-3 ">
                 {
                 productos.map((product, idx) => {
                     return (
-                        <div className="col-4 mb-5" key={idx}>
+                        <div className="col-3 mb-5" key={idx}>
                             <div className="card">
                                 <img src={`/assets/img/${product.img}`} height={270} alt={product.nombre} className="card-img-top" />
                                 <div className="card-body">
