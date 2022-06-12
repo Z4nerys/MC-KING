@@ -48,7 +48,7 @@ export const Listado = () => {
     return (
         <>
         <div className="d-flex justify-content-between">
-            <h1 className="" >Productos</h1>
+            <h1>Productos</h1>
         <div className="d-flex align-items-center me-5">  
             <Carrito 
                 itemsCart={itemsCart}
