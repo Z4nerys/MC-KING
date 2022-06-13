@@ -2,6 +2,9 @@ import { Link } from "react-router-dom"
 import { Carrito }  from "./carrito/Carrito"
 import { products } from '../data/data'
 import { useState } from "react";
+import swal from 'sweetalert';
+
+
 
 export const Listado = () => {
 
@@ -22,6 +25,12 @@ export const Listado = () => {
         setItemsCart([])
         setTotal(0)
     }
+    swal({
+        text: "Producto agregado al carrito",
+        icon: "success",
+        button: "Ok",
+        timer: "2000"
+    });
 
     const add = (id) => {
         const [newItem] = products.filter(product => product.id === id)
