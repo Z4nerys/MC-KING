@@ -1,6 +1,7 @@
 import { Link, useHistory } from "react-router-dom"
 import { Carrito }  from "./carrito/Carrito"
 import { products } from '../data/data'
+import { productsbyprice } from '../data/data'
 import { useState } from "react";
 import swal from 'sweetalert';
 
@@ -14,9 +15,15 @@ export const Listado = () => {
     const query = new URLSearchParams(window.location.search);
     //obtengo el dato que quiero de la url, mandandole el param que quiero obtener x parametro
     const prod = query.get('prod')
+    const order = query.get('order')
+    let orderButton = <Link to={`/listado?order=byprice`} className="btn btn-primary">Ordernar por precio</Link>;
     let productos = []
     if(prod){
         productos = products.filter(product => product.tipo === prod)
+        orderButton = <Link to={`/listado`} className="btn btn-primary">Ver productos</Link>;
+    }else if(order){
+        productos = productsbyprice
+        orderButton = <Link to={`/listado`} className="btn btn-primary">Quitar orden</Link>;
     }else{
         productos = products
     }
@@ -69,17 +76,24 @@ export const Listado = () => {
 
     return (
         <>
-        <div className="d-flex justify-content-between">
-            <h1>Productos</h1>
-        <div className="d-flex align-items-center me-5">  
-            <Carrito 
-                itemsCart={itemsCart}
-                total={total}
-                remove={remove}
-                add={add} 
-                reset={reset}
-            />
-        </div>
+        <div>
+            <div className="row">
+                <div className="col-md-3">
+                   <h1>Productos</h1>
+                </div>
+            </div>
+            <div className="d-flex justify-content-between">
+                {orderButton}
+                <div className="d-flex align-items-center me-5">  
+                    <Carrito 
+                        itemsCart={itemsCart}
+                        total={total}
+                        remove={remove}
+                        add={add} 
+                        reset={reset}
+                    />
+                </div>
+            </div>
         </div>    
             <div className="row mt-3 ">
                 {
