@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 import { Carrito }  from "./carrito/Carrito"
 import { products } from '../data/data'
 import { useState } from "react";
 import swal from 'sweetalert';
 
 export const Listado = () => {
+
+    const history = useHistory();
 
     const [itemsCart, setItemsCart] = useState([]);
     const [total, setTotal] = useState(0);
@@ -24,23 +26,37 @@ export const Listado = () => {
         setTotal(0)
     }
 
-    const add = (id) => {
+    const add = async(id) => {
+        const tokenExist = sessionStorage.getItem('token');
+        if (!tokenExist){
+            await swal({
+                title: 'Deslogueado',
+                text: "Debes estar logueado para comprar",
+                icon: "warning",
+                button: "Ok",
+                timer: "1500"
+            });
+            history.push('/login')
+            return
+        }
+
         const [newItem] = products.filter(product => product.id === id)
         const itemInCart = itemsCart.find(item => item.id === newItem.id)
         if (itemInCart) {
             setItemsCart(itemsCart.map(item => item.id === itemInCart.id
                 ? { ...item, cantidad: item.cantidad + 1, precio: item.precio + newItem.precio } : item));
         } else {
+            swal({
+                text: "Producto agregado al carrito",
+                icon: "success",
+                button: "Ok",
+                timer: "800"
+            });
             setItemsCart([...itemsCart, newItem])
         }
-        setTotal(total + newItem.precio) 
-        swal({
-            text: "Producto agregado al carrito",
-            icon: "success",
-            button: "Ok",
-            timer: "2000"
-        });
+        setTotal(total + newItem.precio)
     }
+    
     const remove = (id, precio, cantidad) => {
         const [item] = itemsCart.filter(product => product.id === id)
         if (item.cantidad === 1) {

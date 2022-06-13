@@ -12,23 +12,24 @@ export const Carrito = ({ itemsCart, total, remove, add, reset }) => {
 
     const handleClose = () => setShow(false);
 
-    const Buy = () => { 
+    const endBuy = () =>{
         if(total !== 0){
+            setShow(false);
+            reset();
             swal({
                 text: "Su compra se realizo con exito!",
                 icon: "success",
                 button: "Ok",
-                timer: "2000"
+                timer: "1000"
             });
         }else{
             swal({
                 text: "Carrito vacio",
                 icon: "error",
                 button: "Ok",
-                timer: "2000"
+                timer: "500"
             });
         }
-        setShow(false); 
     }
     const handleShow = () => setShow(true);
 
@@ -60,7 +61,7 @@ export const Carrito = ({ itemsCart, total, remove, add, reset }) => {
                 <Modal.Footer>
                     <Button className='btn mx-5 btn-danger' onClick={reset}>Vaciar</Button>
                     <h5>Precio final: ${total}</h5>
-                    <Button variant="primary" onClick={Buy}>
+                    <Button variant="primary" onClick={endBuy}>
                         Terminar Compra
                     </Button>
                 </Modal.Footer>
