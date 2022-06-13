@@ -24,7 +24,6 @@ export const DashBoardRoute = () => {
                     <Route path='/detalle' component={Detalle}/>
                     <Route path='/locales' component={Locales}/>
                     <Route path='/contacto' component={Contactenos}/>
-                    <Route path='/resultados' component={Resultados}/>
                     <Route path='/gracias' component={Gracias}/>
                 </Switch>
             </div>
