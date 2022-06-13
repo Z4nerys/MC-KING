@@ -1,15 +1,29 @@
+import { useState } from "react";
 import { useHistory } from "react-router-dom"
 import { Link } from "react-router-dom"
+import swal from "sweetalert";
 import './styles.css';
 /* import { Buscador } from '../Buscador' */
 
 export const Header = () => {
 
     const history = useHistory()
-    const handleLogout = () => {
-        sessionStorage.removeItem('token')
+    const [log, setLog] = useState(sessionStorage.getItem('token'));
+
+    const handleLogin = () => {
         history.push('/login')
     }
+
+    const handleLogout = () => {
+        setLog(sessionStorage.removeItem('token'))
+        swal({
+            title : 'Deslogueado',
+            icon: 'success',
+            button: "Ok",
+            timer: "1000"
+        })
+    }
+    
 
     return (
         <>
@@ -17,7 +31,7 @@ export const Header = () => {
                 <header className="container">
                     <div className="logo">
                         <Link className="link-img" to='/'>
-                            <img src="/assets/img/logo-bg-white.png" width="68px" height="68px" alt="logo"/>
+                            <img src="/assets/img/logo-bg-white.png" width="68px" height="68px" alt="logo" />
                         </Link>
                     </div>
                     <nav className="">
@@ -34,11 +48,18 @@ export const Header = () => {
                         </ul>
                     </nav>
                     {/* <Buscador/> */}
-                    <button
-                        onClick={handleLogout}
-                    >
-                        Login
-                    </button>
+                    {
+                        log ? <button onClick={handleLogout}>
+                                Logout
+                            </button>
+                            :
+                            <button
+                                onClick={handleLogin}
+                            >
+                                Login
+                            </button>
+                    }
+
                 </header>
             </div>
             <div className="header-space"></div>

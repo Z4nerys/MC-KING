@@ -1,8 +1,10 @@
-import { useHistory } from 'react-router-dom'
+import { Redirect, useHistory } from 'react-router-dom'
 import swal from 'sweetalert';
 
 export const Login = () => {
     const history = useHistory()
+
+    const tokenExist = sessionStorage.getItem('token')
 
     const submitHandler = async e => {
         e.preventDefault()
@@ -32,6 +34,15 @@ export const Login = () => {
             });
             return;
         }
+        if (password !== '' && password.length <= 4) {
+            swal({
+                text: "El password debe ser mayor a 4",
+                icon: "warning",
+                button: "Ok",
+                timer: "1000"
+            });
+            return;
+        }
 
         /* if (email !== 'day@unla.com' || password !== 'unla') {
             alert('Credenciales invalidas')
@@ -49,7 +60,9 @@ export const Login = () => {
     }
 
     return (
+        
         <div className='row'>
+            {tokenExist && <Redirect to='/listado' />}
             <div className='col-6 offset-3 mt-3'>
                 <h1>Formulario de login</h1>
                 <hr />
