@@ -43,6 +43,9 @@ export const Header = () => {
                                 <Link className="link" to='/locales'> Locales</Link>
                             </li>
                             <li>
+                                <Link className="link" to='/listado?prod=promo'> Promociones</Link>
+                            </li>
+                            <li>
                                 <Link className="link" to='/contacto'> Contactenos</Link>
                             </li>
                         </ul>

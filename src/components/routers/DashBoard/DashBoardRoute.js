@@ -10,6 +10,7 @@ import { Home } from '../../Home/Home';
 import { Locales } from '../../Locales';
 import { Contactenos } from '../../Contactenos';
 import './styles.css';
+import { Gracias } from '../../Gracias';
 
 export const DashBoardRoute = () => {
 
@@ -23,6 +24,8 @@ export const DashBoardRoute = () => {
                     <Route path='/detalle' component={Detalle}/>
                     <Route path='/locales' component={Locales}/>
                     <Route path='/contacto' component={Contactenos}/>
+                    <Route path='/resultados' component={Resultados}/>
+                    <Route path='/gracias' component={Gracias}/>
                 </Switch>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 
 export const Contactenos = () => {
@@ -8,38 +9,68 @@ export const Contactenos = () => {
     }
     return (
         <>
-            <h1>Formulario</h1>
+            <h1>Contactenos</h1>
             <form className="row" onSubmit={enviarDatos}>
-                <div className="col-md-3">
-                    <input 
-                        type="text" 
-                        placeholder="Nombre" 
-                        className="form-control"  
-                        name="nombre"
-                    />
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-5">
+                        <input 
+                            type="text" 
+                            placeholder="Nombre" 
+                            className="form-control"  
+                            name="nombre"
+                        />
+                    </div>
                 </div>
-                <div className="col-md-3">
-                    <input 
-                        type="text"
-                        placeholder="Email"
-                        className="form-control"
-                        name="apellido"
-                    />
+                <div className="row">
+                    <br/>
                 </div>
-                <div className="col-md-3">
-                    <input 
-                        type="text"
-                        placeholder="Numero de telefono"
-                        className="form-control"
-                        name="apellido"
-                    />
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-5">
+                        <input 
+                            type="text" 
+                            placeholder="Email" 
+                            className="form-control"  
+                            name="email"
+                        />
+                    </div>
                 </div>
-                <textarea
-                    placeholder="Mensaje"
-                >
-
-                </textarea>
-                <button type="submit" className="btn btn-primary">Enviar</button>
+                <div className="row">
+                    <br/>
+                </div>
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-5">
+                        <input 
+                            type="text" 
+                            placeholder="Número de telefono" 
+                            className="form-control"  
+                            name="telefono"
+                        />
+                    </div>
+                </div>
+                <div className="row">
+                    <br/>
+                </div>
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-5">
+                        <textarea style={{ width: "100%", height: "150px" }}
+                            placeholder="Mensaje"
+                        >
+                        </textarea>
+                    </div>
+                </div>
+                <div className="row">
+                    <br/>
+                </div>
+                <div className="row">
+                    <div className="col-md-3"></div>
+                    <div className="col-md-5">
+                        <Link to={`/gracias`} className="btn btn-primary">Enviar</Link>
+                    </div>
+                </div>
             </form>
         </>
     )
