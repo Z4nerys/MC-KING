@@ -37,6 +37,13 @@ export const Listado = () => {
             setItemsCart([...itemsCart, newItem])
             setTotal(total + newItem.precio)
         }
+
+        swal({
+            text: "Producto agregado al carrito",
+            icon: "success",
+            button: "Ok",
+            timer: "2000"
+        });
     }
     const remove = (id, precio, cantidad) => {
         const [item] = itemsCart.filter(product => product.id === id)
