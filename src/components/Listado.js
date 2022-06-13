@@ -76,17 +76,23 @@ export const Listado = () => {
 
     return (
         <>
-        <div className="d-flex justify-content-between">
-            <h1>Productos</h1>
-            {orderButton}
-            <div className="d-flex align-items-center me-5">  
-                <Carrito 
-                    itemsCart={itemsCart}
-                    total={total}
-                    remove={remove}
-                    add={add} 
-                    reset={reset}
-                />
+        <div>
+            <div className="row">
+                <div className="col-md-3">
+                   <h1>Productos</h1>
+                </div>
+            </div>
+            <div className="d-flex justify-content-between">
+                {orderButton}
+                <div className="d-flex align-items-center me-5">  
+                    <Carrito 
+                        itemsCart={itemsCart}
+                        total={total}
+                        remove={remove}
+                        add={add} 
+                        reset={reset}
+                    />
+                </div>
             </div>
         </div>    
             <div className="row mt-3 ">
