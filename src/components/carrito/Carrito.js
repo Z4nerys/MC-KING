@@ -7,18 +7,31 @@ import Modal from 'react-bootstrap/Modal';
 import swal from 'sweetalert';
 
 export const Carrito = ({ itemsCart, total, remove, add, reset }) => {
+
     const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false)
+    const handleClose = () => setShow(false);
+
     const Buy = () => { 
         if(total !== 0){
-            swal("Muchas Gracias", "Su compra se realizo con exito!", "success")
+            swal({
+                text: "Su compra se realizo con exito!",
+                icon: "success",
+                button: "Ok",
+                timer: "2000"
+            });
         }else{
-            swal("Carrito vacio", "Tenes que tener minimo un producto", "warning")
+            swal({
+                text: "Carrito vacio",
+                icon: "error",
+                button: "Ok",
+                timer: "2000"
+            });
         }
         setShow(false); 
     }
     const handleShow = () => setShow(true);
+
     return (
         <div>
             <Button variant="success" onClick={handleShow} className="px-5 py-2">

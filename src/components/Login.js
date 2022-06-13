@@ -1,4 +1,5 @@
 import { useHistory } from 'react-router-dom'
+import swal from 'sweetalert';
 
 export const Login = () => {
     const history = useHistory()
@@ -13,12 +14,22 @@ export const Login = () => {
         const regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         if (email === '' || password === '') {
-            alert('Los campos no pueden estar vacios')
+            swal({
+                text: "Los campos no pueden estar vacios",
+                icon: "warning",
+                button: "Ok",
+                timer: "2000"
+            });
             return;
         }
 
         if (email !== '' && !regexEmail.test(email)) {
-            alert('Debes escribir una dirección de correo electrónico valida')
+            swal({
+                text: "Debes escribir una dirección de correo electrónico valida",
+                icon: "error",
+                button: "Ok",
+                timer: "2000"
+            });
             return;
         }
 
@@ -26,12 +37,12 @@ export const Login = () => {
             alert('Credenciales invalidas')
             return;
         } */
-
-        //envio de formulario. POST con axios.
-
-        //se envia la url y como segundo parametro un objeto con los datos
-        //obtengo el token
-        await alert('Formulario enviado con exito!')
+        await swal({
+            text: "Logeado con exito!",
+            icon: "success",
+            button: "Ok",
+            timer: "1500"
+        });
         //luego guardo el token en el localStorage
         sessionStorage.setItem('token', email);
         history.push('/listado');

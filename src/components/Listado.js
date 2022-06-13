@@ -4,8 +4,6 @@ import { products } from '../data/data'
 import { useState } from "react";
 import swal from 'sweetalert';
 
-
-
 export const Listado = () => {
 
     const [itemsCart, setItemsCart] = useState([]);
@@ -32,12 +30,10 @@ export const Listado = () => {
         if (itemInCart) {
             setItemsCart(itemsCart.map(item => item.id === itemInCart.id
                 ? { ...item, cantidad: item.cantidad + 1, precio: item.precio + newItem.precio } : item));
-            setTotal(total + newItem.precio)
         } else {
             setItemsCart([...itemsCart, newItem])
-            setTotal(total + newItem.precio)
         }
-
+        setTotal(total + newItem.precio) 
         swal({
             text: "Producto agregado al carrito",
             icon: "success",
