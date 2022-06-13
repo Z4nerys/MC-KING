@@ -38,7 +38,7 @@ export const Login = () => {
             return;
         } */
         await swal({
-            text: "Logeado con exito!",
+            text: "Logueado con exito!",
             icon: "success",
             button: "Ok",
             timer: "1500"
