@@ -4,8 +4,6 @@ import { products } from '../data/data'
 import { useState } from "react";
 import swal from 'sweetalert';
 
-
-
 export const Listado = () => {
 
     const [itemsCart, setItemsCart] = useState([]);
@@ -25,12 +23,6 @@ export const Listado = () => {
         setItemsCart([])
         setTotal(0)
     }
-    swal({
-        text: "Producto agregado al carrito",
-        icon: "success",
-        button: "Ok",
-        timer: "2000"
-    });
 
     const add = (id) => {
         const [newItem] = products.filter(product => product.id === id)
@@ -38,11 +30,16 @@ export const Listado = () => {
         if (itemInCart) {
             setItemsCart(itemsCart.map(item => item.id === itemInCart.id
                 ? { ...item, cantidad: item.cantidad + 1, precio: item.precio + newItem.precio } : item));
-            setTotal(total + newItem.precio)
         } else {
             setItemsCart([...itemsCart, newItem])
-            setTotal(total + newItem.precio)
         }
+        setTotal(total + newItem.precio)
+        swal({
+            text: "Producto agregado al carrito",
+            icon: "success",
+            button: "Ok",
+            timer: "2000"
+        });
     }
     const remove = (id, precio, cantidad) => {
         const [item] = itemsCart.filter(product => product.id === id)
